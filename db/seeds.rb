@@ -59,7 +59,7 @@ job1 = Job.create(
     image_url: 'http://logok.org/wp-content/uploads/2014/06/Microsoft-logo-m-box.png',
     title: 'Junior Software Engineer',
     location: 'Remote/NY',
-    # company: 'Microsoft',
+    company: company1,
     salary: 80000,
     company_id: company1.id
     
@@ -68,7 +68,7 @@ job2 = Job.create(
      image_url: 'http://logok.org/wp-content/uploads/2014/06/Microsoft-logo-m-box.png',
      title: 'Level II Software Engineer',
      location: 'Remote/North Dakota',
-    #  company: 'Microsoft',
+     company: company1,
      salary: 120000,
      company_id: company1.id
      
@@ -79,7 +79,7 @@ job3 = Job.create(
      image_url: 'http://logok.org/wp-content/uploads/2014/06/Microsoft-logo-m-box.png',
      title: 'Senior Software Engineer',
      location: 'Remote/Chicago',
-    #  company: 'Microsoft',
+     company: company1,
      salary: 175000,
      company_id: company1.id
    
@@ -89,7 +89,7 @@ job4 = Job.create(
     image_url: 'https://upload.wikimedia.org/wikipedia/commons/a/ab/Apple-logo.png',
     title: 'Systems Software Engineer',
     location: 'Remote/WA',
-    # company: 'Apple',
+    company: company2,
     salary: 2000000,
     company_id: company2.id
 
@@ -99,7 +99,7 @@ job5 = Job.create(
     image_url: 'https://upload.wikimedia.org/wikipedia/commons/a/ab/Apple-logo.png',
     title: 'Swift Programmer',
     location: 'Remote/CA',
-    # company: 'Apple',
+    company: company2,
     salary: 1000000,
     company_id: company2.id
 
@@ -109,7 +109,7 @@ job6 = Job.create(
     image_url: 'https://upload.wikimedia.org/wikipedia/commons/a/ab/Apple-logo.png',
     title: 'AI/ML - iOS & macOS Software Engineer',
     location: 'Remote/PA',
-    # company: 'Apple',
+    company: company2,
     salary: 175000,
     company_id: company2.id
 
@@ -119,7 +119,7 @@ job7 = Job.create(
     image_url: 'https://www.designbust.com/download/640/png/facebook_logo_transparent512.png',
     title: 'META Software Engineer',
     location: 'Remote/CA',
-    # company: 'Facebook',
+    company: company3,
     salary: 114000,
     company_id: company3.id
 
@@ -129,7 +129,7 @@ job8 = Job.create(
     image_url: 'https://www.designbust.com/download/640/png/facebook_logo_transparent512.png',
     title: 'Senior Evil Hack',
     location: 'Remote/FL',
-    # company: 'Facebook',
+    company: company3,
     salary: 500000,
     company_id: company3.id
 
@@ -139,7 +139,7 @@ job9 = Job.create(
     image_url: 'https://www.designbust.com/download/640/png/facebook_logo_transparent512.png',
     title: 'React Native Developer',
     location: 'Remote/CA',
-    # company: 'Facebook',
+    company: company3,
     salary: 130000,
     company_id: company3.id
 
@@ -149,7 +149,7 @@ job10 = Job.create(
     image_url: 'https://kgo.googleusercontent.com/profile_vrt_raw_bytes_1587515358_10512.png',
     title: 'Staff Software Engineer, Pixel Graphics',
     location: 'Remote/WA',
-    # company: 'Google',
+    company: company4,
     salary: 137000,
     company_id: company4.id
 
@@ -158,7 +158,7 @@ job11 = Job.create(
     image_url: 'https://kgo.googleusercontent.com/profile_vrt_raw_bytes_1587515358_10512.png',
     title: 'Junior Software Engineer',
     location: 'Remote/NY',
-    # company: 'Google',
+    company: company4,
     salary: 80000,
     company_id: company4.id
 
@@ -167,7 +167,7 @@ job12 = Job.create(
     image_url: 'https://kgo.googleusercontent.com/profile_vrt_raw_bytes_1587515358_10512.png',
     title: 'Junior Software Engineer',
     location: 'Remote/NY',
-    # company: 'Google',
+    company: company4,
     salary: 80000,
     company_id: company4.id
 
