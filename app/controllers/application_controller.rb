@@ -74,11 +74,11 @@ end
 
 # post '/applies' do
 #   apply = Apply.create(
-#      ser_id
-# : params[:user_id]      job_id: params[:job_id]
+#      user_id: params[:user_id],
+#      job_id: params[:job_id]
 #   ) 
-#     apply.to_json
-#   # puts "does this  work?"
+#      apply.to_json
+#      puts "does this  work?"
 # end
 
 # post '/users' do
