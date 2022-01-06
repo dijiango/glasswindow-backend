@@ -69,3 +69,29 @@ post '/users' do
 ) 
   put "does this  work?"
 end
+
+#DELETE req
+# delete 'applies/:id' do
+# 	apply = apply.find(params[:id])
+# 	review.destroy
+# 	review.to_json
+# end
+
+#PATCH req
+patch '/applies/:id' do
+  apply = Apply.find(params[:id])
+  apply.update(
+    user_id: params[:user_id],
+    job_id: params[:job_id]
+  )
+  review.to_json
+end
+
+# patch '/resumes/:id' do
+#   resume = apply.find(params[:id])
+#   apply.update(
+#     user_id: params[:user_id],
+#     job_id: params[:job_id]
+#   )
+#   review.to_json
+# end
