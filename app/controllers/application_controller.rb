@@ -30,7 +30,7 @@ class ApplicationController < Sinatra::Base
     user = User.find(params[:id])
     
     # should include associated jobs in the Json response
-    user.to_json(include: {applies: {include: :jobs}})
+    user.to_json(include: :jobs)
   end
 
   get '/applies' do
@@ -47,46 +47,25 @@ class ApplicationController < Sinatra::Base
     CoverLetter.all.to_json
   end
 
-
-
-  
-
 end
 
+# POST reqs
 
+post '/applies' do
+  apply = Apply.create(
+     user_id: params[:user_id],
+     job_id: params[:job_id]
+  ) 
+     apply.to_json
+     puts "does this  work?"
+end
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# post '/applies' do
-#   apply = Apply.create(
-#      user_id: params[:user_id],
-#      job_id: params[:job_id]
-#   ) 
-#      apply.to_json
-#      puts "does this  work?"
-# end
-
-# post '/users' do
-#   push = 
-#   put "does this  work?"
-# end
-
-# post '/' do
-#   push = 
-#   put "does this  work?"
-# end
+post '/users' do
+  user = User.create(
+  name: params[:name],
+  address: params[:address],
+  email: params[:email],
+  phone_number: params[:phone_number]
+) 
+  put "does this  work?"
+end

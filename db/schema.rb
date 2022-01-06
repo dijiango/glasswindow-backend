@@ -50,6 +50,7 @@ ActiveRecord::Schema.define(version: 2022_01_04_173818) do
   end
 
   create_table "users", force: :cascade do |t|
+    t.string "image_url"
     t.string "name"
     t.string "address"
     t.string "email"
