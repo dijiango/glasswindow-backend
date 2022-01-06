@@ -47,7 +47,7 @@ class ApplicationController < Sinatra::Base
     CoverLetter.all.to_json
   end
 
-end
+
 
 # POST reqs
 
@@ -67,7 +67,7 @@ post '/users' do
   email: params[:email],
   phone_number: params[:phone_number]
 ) 
-  put "does this  work?"
+  puts "does this  work?"
 end
 
 #DELETE req
@@ -87,11 +87,28 @@ patch '/applies/:id' do
   review.to_json
 end
 
-# patch '/resumes/:id' do
-#   resume = apply.find(params[:id])
-#   apply.update(
-#     user_id: params[:user_id],
-#     job_id: params[:job_id]
-#   )
-#   review.to_json
-# end
+patch '/resumes/:id' do
+  resume = R.sumefind(params[:id])
+  resume.update(
+    name: params[:name],
+    address: params[:address],
+    email: params[:email],
+    phone_number: params[:phone_number]
+
+  #  user_id #is this needed here?
+  )
+  review.to_json
+end
+
+patch '/cover_letters/:id' do
+  coverLetters = CoverLetter.find(params[:id])
+  coverLetters.update(
+    name: params[:name],
+    company: params[:company]
+
+    #user_id #is this needed here?
+  )
+  review.to_json
+end
+
+end
