@@ -67,15 +67,21 @@ post '/users' do
   email: params[:email],
   phone_number: params[:phone_number]
 ) 
-  puts "does this  work?"
+  user.to_json
 end
 
 #DELETE req
-# delete 'applies/:id' do
-# 	apply = apply.find(params[:id])
-# 	review.destroy
-# 	review.to_json
-# end
+delete '/applies/:id' do
+	apply = Apply.find(params[:id])
+	apply.destroy
+	apply.to_json
+end
+
+delete '/users/:id' do
+	user = User.find(params[:id])
+	user.destroy
+	user.to_json
+end
 
 #PATCH req
 patch '/applies/:id' do
@@ -84,7 +90,7 @@ patch '/applies/:id' do
     user_id: params[:user_id],
     job_id: params[:job_id]
   )
-  review.to_json
+  apply.to_json
 end
 
 patch '/resumes/:id' do
@@ -97,7 +103,7 @@ patch '/resumes/:id' do
 
   #  user_id #is this needed here?
   )
-  review.to_json
+  resume.to_json
 end
 
 patch '/cover_letters/:id' do
@@ -109,6 +115,18 @@ patch '/cover_letters/:id' do
     #user_id #is this needed here?
   )
   review.to_json
+end
+patch '/users/:id' do
+  user = User.find(params[:id])
+  user.update(
+    name: params[:name],
+    address: params[:address],
+    email: params[:email],
+    phone_number: params[:phone_number]
+
+    #user_id #is this needed here?
+  )
+  user.to_json
 end
 
 end
