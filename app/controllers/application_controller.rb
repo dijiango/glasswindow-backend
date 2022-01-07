@@ -90,9 +90,7 @@ class ApplicationController < Sinatra::Base
     user.to_json
   end
 
-<<<<<<< HEAD
   
-=======
 
 
 # POST reqs
@@ -123,10 +121,10 @@ delete '/applies/:id' do
 	apply.to_json
 end
 
-delete '/users/:id' do
-	user = User.find(params[:id])
-	user.destroy
-	user.to_json
+delete '/jobs/:id' do
+	job = Job.find(params[:id])
+	job.destroy
+	job.to_json
 end
 
 #PATCH req
@@ -175,5 +173,4 @@ patch '/users/:id' do
   user.to_json
 end
 
->>>>>>> c480b64e2424df94494f74cfb689dbeae332a35c
 end
