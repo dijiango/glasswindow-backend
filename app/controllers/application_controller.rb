@@ -2,8 +2,9 @@ class ApplicationController < Sinatra::Base
   set :default_content_type, 'application/json'
     
     get "/jobs" do
-      Job.all.to_json
+      Job.all.to_json(include: :company)
     end
+
 
   #   get "/jobs/:id" do
   #     job = Job.find(params[:id])
