@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(version: 2022_01_04_173818) do
     t.string "image_url"
     t.string "name"
     t.string "location"
+    t.string "industry"
     t.integer "rating"
   end
 
@@ -31,11 +32,11 @@ ActiveRecord::Schema.define(version: 2022_01_04_173818) do
   end
 
   create_table "jobs", force: :cascade do |t|
-    t.string "image_url"
     t.string "title"
-    t.string "company"
     t.string "location"
     t.integer "salary"
+    t.string "employment_type"
+    t.string "education"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.integer "company_id"

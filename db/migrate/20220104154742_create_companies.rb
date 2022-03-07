@@ -4,6 +4,7 @@ class CreateCompanies < ActiveRecord::Migration[6.1]
         t.string :image_url
         t.string :name
         t.string :location
+        t.string :industry
         t.integer :rating
 
       end

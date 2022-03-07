@@ -17,30 +17,30 @@ puts 'Creating companies...'
 #-------- Companies ------------------
 
 company1 = Company.create(
-    image_url: Faker::logo,
-    name: Faker::Company.name Faker::Company.suffix,
+    image_url: Faker::Company.logo,
+    name: Faker::Company.name,
     industry: Faker::Job.field,
     rating: 4
 )
 
 company2 = Company.create(
-    image_url: Faker::logo,
-    name: Faker::Company.name Faker::Company.suffix,
+    image_url: Faker::Company.logo,
+    name: Faker::Company.name,
     industry: Faker::Job.field,
     rating: 4
 )
 
 company3 = Company.create(
-    image_url: Faker::logo,
-    name: Faker::Company.name Faker::Company.suffix,
+    image_url: Faker::Company.logo,
+    name: Faker::Company.name,
     industry: Faker::Job.field,
     rating: 2
 
 )
 
 company4 = Company.create(
-    image_url: Faker::logo,
-    name: Faker::Company.name Faker::Company.suffix,
+    image_url: Faker::Company.logo,
+    name: Faker::Company.name,
     industry: Faker::Job.field,
     rating: 5
 )
@@ -50,7 +50,6 @@ company4 = Company.create(
 puts 'Creating Jobs...'
 
 job1 = Job.create(
-    image_url: Faker::logo,
     title: 'Junior Software Engineer',
     location: Faker::Address.state,
     salary: 80000,
@@ -60,7 +59,6 @@ job1 = Job.create(
     
 )
 job2 = Job.create(
-    image_url: Faker::logo,
     title: 'Level II Software Engineer',
     location: Faker::Address.state,
     salary: 120000,
@@ -72,7 +70,6 @@ job2 = Job.create(
     
 )
 job3 = Job.create(
-    image_url: Faker::logo,
     title: 'Software Engineer Intern',
     location: Faker::Address.state,
     salary: 175000,
@@ -83,7 +80,6 @@ job3 = Job.create(
 )
 
 job4 = Job.create(
-    image_url: Faker::logo,
     title: 'Systems Software Engineer',
     location: Faker::Address.state,
     salary: 2000000,
@@ -94,7 +90,6 @@ job4 = Job.create(
 )
 
 job5 = Job.create(
-    image_url: Faker::logo,
     title: 'Swift Programmer',
     location: Faker::Address.state,
     salary: 1000000,
@@ -105,7 +100,6 @@ job5 = Job.create(
 )
 
 job6 = Job.create(
-    image_url: Faker::logo,
     title: 'AI/ML - iOS & macOS Software Engineer',
     location: Faker::Address.state,
     salary: 175000,
@@ -115,7 +109,6 @@ job6 = Job.create(
 )
 
 job7 = Job.create(
-    image_url: Faker::logo,
     title: 'Full-Stack Software Engineer',
     location: Faker::Address.state,
     salary: 114000,
@@ -126,7 +119,6 @@ job7 = Job.create(
 )
 
 job8 = Job.create(
-    image_url: Faker::logo,
     title: 'Senior Evil Hack',
     location: Faker::Address.state,
     salary: 500000,
@@ -137,7 +129,6 @@ job8 = Job.create(
 )
 
 job9 = Job.create(
-    image_url: Faker::logo,
     title: 'React Native Developer',
     location: Faker::Address.state,
     salary: 130000,
@@ -148,7 +139,6 @@ job9 = Job.create(
 )
 
 job10 = Job.create(
-    image_url: Faker::logo,
     title: 'Staff Software Engineer, Pixel Graphics',
     location: Faker::Address.state,
     salary: 137000,
@@ -158,7 +148,6 @@ job10 = Job.create(
 
 )
 job11 = Job.create(
-    image_url: Faker::logo,
     title: 'Junior Software Engineer',
     location: Faker::Address.state,
     salary: 80000,
@@ -168,7 +157,6 @@ job11 = Job.create(
 
 )
 job12 = Job.create(
-    image_url: Faker::logo,
     title: 'Junior Software Engineer',
     location: Faker::Address.state,
     salary: 80000,
