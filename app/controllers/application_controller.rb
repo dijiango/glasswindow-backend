@@ -29,9 +29,9 @@ class ApplicationController < Sinatra::Base
   #     user.to_json(include: :jobs)
   #   end
 
-  #   get '/applies' do
-  #     Apply.all.to_json
-  #   end
+    get '/applies' do
+      Apply.all.to_json
+    end
 
   #   get '/resumes' do
       
