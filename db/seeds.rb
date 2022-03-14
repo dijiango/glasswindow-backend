@@ -27,7 +27,7 @@ company2 = Company.create(
     image_url: Faker::Company.logo,
     name: Faker::Company.name,
     industry: Faker::Job.field,
-    rating: 4
+    rating: 3
 )
 
 company3 = Company.create(
@@ -55,6 +55,7 @@ job1 = Job.create(
     salary: 80000,
     employment_type: Faker::Job.employment_type,
     education: Faker::Job.education_level,
+    description: Faker::Lorem.paragraph(sentence_count: 3, supplemental: false, random_sentences_to_add: 5),
     company_id: company1.id
     
 )
@@ -64,6 +65,7 @@ job2 = Job.create(
     salary: 120000,
     employment_type: Faker::Job.employment_type,
     education: Faker::Job.education_level,
+    description: Faker::Lorem.paragraph(sentence_count: 3, supplemental: false, random_sentences_to_add: 5),
     company_id: company1.id
      
    
@@ -75,6 +77,7 @@ job3 = Job.create(
     salary: 175000,
     employment_type: Faker::Job.employment_type,
     education: Faker::Job.education_level,
+    description: Faker::Lorem.paragraph(sentence_count: 3, supplemental: false, random_sentences_to_add: 5),
     company_id: company1.id
    
 )
@@ -85,6 +88,7 @@ job4 = Job.create(
     salary: 2000000,
     employment_type: Faker::Job.employment_type,
     education: Faker::Job.education_level,
+    description: Faker::Lorem.paragraph(sentence_count: 3, supplemental: false, random_sentences_to_add: 5),
     company_id: company2.id
 
 )
@@ -95,6 +99,7 @@ job5 = Job.create(
     salary: 1000000,
     employment_type: Faker::Job.employment_type,
     education: Faker::Job.education_level,
+    description: Faker::Lorem.paragraph(sentence_count: 3, supplemental: false, random_sentences_to_add: 5),
     company_id: company2.id
 
 )
@@ -105,6 +110,7 @@ job6 = Job.create(
     salary: 175000,
     employment_type: Faker::Job.employment_type,
     education: Faker::Job.education_level,
+    description: Faker::Lorem.paragraph(sentence_count: 3, supplemental: false, random_sentences_to_add: 5),
     company_id: company2.id
 )
 
@@ -114,6 +120,7 @@ job7 = Job.create(
     salary: 114000,
     employment_type: Faker::Job.employment_type,
     education: Faker::Job.education_level,
+    description: Faker::Lorem.paragraph(sentence_count: 3, supplemental: false, random_sentences_to_add: 5),
     company_id: company3.id
 
 )
@@ -124,6 +131,7 @@ job8 = Job.create(
     salary: 500000,
     employment_type: Faker::Job.employment_type,
     education: Faker::Job.education_level,
+    description: Faker::Lorem.paragraph(sentence_count: 3, supplemental: false, random_sentences_to_add: 5),
     company_id: company3.id
 
 )
@@ -134,6 +142,7 @@ job9 = Job.create(
     salary: 130000,
     employment_type: Faker::Job.employment_type,
     education: Faker::Job.education_level,
+    description: Faker::Lorem.paragraph(sentence_count: 3, supplemental: false, random_sentences_to_add: 5),
     company_id: company3.id
 
 )
@@ -144,6 +153,7 @@ job10 = Job.create(
     salary: 137000,
     employment_type: Faker::Job.employment_type,
     education: Faker::Job.education_level,
+    description: Faker::Lorem.paragraph(sentence_count: 3, supplemental: false, random_sentences_to_add: 5),
     company_id: company4.id
 
 )
@@ -153,6 +163,7 @@ job11 = Job.create(
     salary: 80000,
     employment_type: Faker::Job.employment_type,
     education: Faker::Job.education_level,
+    description: Faker::Lorem.paragraph(sentence_count: 3, supplemental: false, random_sentences_to_add: 5),
     company_id: company4.id
 
 )
@@ -162,6 +173,7 @@ job12 = Job.create(
     salary: 80000,
     employment_type: Faker::Job.employment_type,
     education: Faker::Job.education_level,
+    description: Faker::Lorem.paragraph(sentence_count: 3, supplemental: false, random_sentences_to_add: 5),
     company_id: company4.id
 
 )

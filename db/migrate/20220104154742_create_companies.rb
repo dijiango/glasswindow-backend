@@ -3,7 +3,6 @@ class CreateCompanies < ActiveRecord::Migration[6.1]
       create_table :companies do |t|
         t.string :image_url
         t.string :name
-        t.string :location
         t.string :industry
         t.integer :rating
 
