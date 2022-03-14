@@ -6,11 +6,11 @@ class ApplicationController < Sinatra::Base
     end
 
 
-  #   get "/jobs/:id" do
-  #     job = Job.find(params[:id])
+    get "/jobs/:id" do
+      job = Job.find(params[:id])
 
-  #     job.to_json(include: :users)
-  #   end
+      job.to_json(include: :company)
+    end
     
 
   #   get "/companies" do
