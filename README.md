@@ -35,7 +35,7 @@ This will run your server on port
 [http://localhost:9292](http://localhost:9292).
 
 ## Contributors
->Please support all the contributors of GeoExchange
+>Please follow the contributors of Glass Window:
 
 * Stephen Avino's [GitHub](https://github.com/stavino)
 * Adam Bosak's [GitHub](https://github.com/Bosak3)
